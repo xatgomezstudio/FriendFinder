@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Survey</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Bootstrap Container will hold everything. -->
+    <div class="container">
+
+        <!-- Jumbotron holds the title section. -->
+        <div class='jumbotron'>
+            <div class='container'>
+                <h1>Surveying the Land for Xat's New Friends</h1>
+                <h2>Answer as many questions as possible before time runs out!</h2>
+                <br>
+                <div id="time-left">Time Remaining:</div>
+                <div id="show-number"></div>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="resume">Resume</button>
+                <br>
+                <br>
+                <div id="correct"></div>
+                <div id="incorrect"></div>
+            </div>
+        </div>
+
+        <!-- Game counters held here. cards are being used to hold various sections. -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- First card: Question 1. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 1: On a scale from 1 to Gross! How much does Xat dislike
+                                dolphins?</strong></h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- First card: Question 2. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 2: How many of Xat's bags have glitter in them?</strong>
+                        </h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- First card: Question 3. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 3: How many days out of the week does Xat wish she could eat a whole
+                                block of cheese?</strong></h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- First card: Question 4. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 4: How many kinds of smoked and/or canned fish does Xat
+                                like?</strong></h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- First card: Question 5. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 5: How many cups of coffee does Xat drink in a week?
+                            </strong></h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- First card: Question 6. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 6: On a scale from 1 to, "Can't live without it!" How much does Xat enjoy listening to Bossa Nova while
+                                riding a bicycle?</strong></h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- First card: Question 7. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 7: How many watches does Xat want to own?</strong></h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- First card: Question 8. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 8: How many pets and plants does Xat want to have total?</strong></h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- First card: Question 9. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 9: How many citizenships does Xat want?</strong></h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- First card: Question 10. -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Question 10: How many siblings does Xat have?</strong></h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- This the form and multiple choice section using bootstrap.  -->
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input questions" type="radio" name="questionone"
+                                id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios5">
+                                5
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Script Tags -->
+    <script type="text/javascript" src=assets/app.js> </script> <div id="jqueryTags">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    </div>
+
+    <!-- Adds a link to the JavaScript file. Loaded at the bottom so it waits for the HTML content to display first. If you put this at the top it will crash, because the HTML IDs won"t exist yet.-->
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
